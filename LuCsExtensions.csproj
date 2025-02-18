@@ -5,8 +5,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Title>Lu C# Extensions</Title>
-    <Authors>$(Authors)</Authors>
-    <Company />
+    <Authors>Luca Mollo</Authors>
+    <Company>Luca Mollo</Company>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>

@@ -24,6 +24,18 @@
 		public static T RandomValue<T>(this IList<T> list)
 		{
 			return list[random.Next(0, list.Count)];
-		}
-	}
+        }
+
+        public static void SortBy<T, TKey>(this List<T> list, Func<T, TKey> selector, IComparer<TKey>? comparer = null)
+        {
+            comparer ??= Comparer<TKey>.Default;
+            list.Sort((a, b) => comparer.Compare(selector(a), selector(b)));
+        }
+
+        public static void SortByDescending<T, TKey>(this List<T> list, Func<T, TKey> selector, IComparer<TKey>? comparer = null)
+        {
+            comparer ??= Comparer<TKey>.Default;
+            list.Sort((a, b) => comparer.Compare(selector(b), selector(a)));
+        }
+    }
 }
