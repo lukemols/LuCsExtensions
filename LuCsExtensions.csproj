@@ -1,13 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <Title>Lu C# Extensions</Title>
-    <Authors>Luca Mollo</Authors>
-    <Company>Luca Mollo</Company>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-  </PropertyGroup>
-
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Title>Lu C# Extensions</Title>
+		<Authors>Luca Mollo</Authors>
+		<Company>Luca Mollo</Company>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<VersionPrefix>1.0.1</VersionPrefix>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 </Project>
